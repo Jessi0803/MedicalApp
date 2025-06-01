@@ -1,0 +1,14 @@
+# Target labels
+ fft2d-populate
+# Source files and their labels
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/fft2d-populate
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/fft2d-populate.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/fft2d-populate-complete.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-build.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-configure.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-download.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-install.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-mkdir.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-patch.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-test.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/fft2d-populate-update.rule

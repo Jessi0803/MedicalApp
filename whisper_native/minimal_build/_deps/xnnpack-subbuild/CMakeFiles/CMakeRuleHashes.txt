@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+096cc7fd9942e3cee31d0516f908dfe4 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-build
+900ac6f2ff8cf70cefe685c7fff29aef /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-configure
+2d79143fff1a4f9fc99edb8799480a14 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-download
+82cbd237bcf3c37154ba2f0393819145 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-install
+166fb7866a13fdf5c390441c78044ed7 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-mkdir
+951605fd2a1e86a79408d599591512d1 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-patch
+8798fa64355b57cc4c2e66bdd9ca1d25 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-test
+a9e065f78d0ef7c1d01fb9709daa45e4 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/xnnpack-populate-stamp/xnnpack-populate-update
+6d4c1cdc339489e226ebd8381be5c59d CMakeFiles/xnnpack-populate
+e85a9d498f4da86c2741f569a9a458c9 CMakeFiles/xnnpack-populate-complete

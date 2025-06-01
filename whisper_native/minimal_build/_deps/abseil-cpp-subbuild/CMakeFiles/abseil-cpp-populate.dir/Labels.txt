@@ -1,0 +1,14 @@
+# Target labels
+ abseil-cpp-populate
+# Source files and their labels
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/abseil-cpp-subbuild/CMakeFiles/abseil-cpp-populate
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/abseil-cpp-subbuild/CMakeFiles/abseil-cpp-populate.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/abseil-cpp-subbuild/CMakeFiles/abseil-cpp-populate-complete.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-build.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-configure.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-download.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-install.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-mkdir.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-patch.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-test.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/abseil-cpp-populate-stamp/abseil-cpp-populate-update.rule

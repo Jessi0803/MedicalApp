@@ -1,0 +1,3 @@
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/fft2d-populate.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/edit_cache.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/fft2d-subbuild/CMakeFiles/rebuild_cache.dir

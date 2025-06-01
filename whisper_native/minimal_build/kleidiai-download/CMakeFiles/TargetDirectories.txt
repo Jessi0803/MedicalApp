@@ -1,0 +1,3 @@
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/edit_cache.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,13 @@
+# Target labels
+ flatbuffers-flatc
+# Source files and their labels
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/tensorflow-lite/CMakeFiles/flatbuffers-flatc
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/tensorflow-lite/CMakeFiles/flatbuffers-flatc.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/tensorflow-lite/CMakeFiles/flatbuffers-flatc-complete.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-build.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-configure.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-download.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-install.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-mkdir.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-patch.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-update.rule

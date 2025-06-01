@@ -1,0 +1,14 @@
+# Target labels
+ kleidiai
+# Source files and their labels
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai-complete.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-build.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-configure.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-download.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-install.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-mkdir.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-patch.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-test.rule
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-update.rule
