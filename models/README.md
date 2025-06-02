@@ -1,6 +1,6 @@
 # Models Directory
 
-This directory contains models and tools for speech processing, including ASR (Automatic Speech Recognition) and speech enhancement.
+This directory contains models and tools for speech processing, including ASR (Automatic Speech Recognition).
 
 ## Model Files
 
@@ -13,16 +13,6 @@ This directory contains models and tools for speech processing, including ASR (A
   - Context window: 3000 frames
   - Optimized for mobile and embedded devices
   - Suitable for real-time transcription
-
-### dtln_quantized.tflite (372KB)
-- Quantized version of the Dual-signal Transformation LSTM Network (DTLN)
-- Purpose: Speech enhancement and noise reduction
-- Features:
-  - Real-time processing capability
-  - Low latency performance
-  - 8-bit quantization for efficient inference
-  - Suitable as a preprocessing step for ASR
-  - Optimized for mobile and embedded devices
 
 ## Utility Notebooks
 
@@ -69,13 +59,11 @@ A Jupyter notebook for generating vocabulary and mel-spectrogram files.
 
 ## Model Pipeline
 1. Audio Input
-2. (Optional) Noise Reduction using DTLN
-3. Mel Spectrogram Generation
-4. ASR using Whisper
-5. Text Output
+2. Mel Spectrogram Generation
+3. ASR using Whisper
+4. Text Output
 
 ## Notes
-- The DTLN model can be used as an optional preprocessing step to improve ASR accuracy in noisy environments
-- Both models are optimized for mobile and embedded devices
+- Models are optimized for mobile and embedded devices
 - The Whisper model supports real-time transcription
 - All models are quantized for efficient inference
