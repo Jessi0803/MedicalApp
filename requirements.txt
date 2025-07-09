@@ -1,0 +1,29 @@
+# Medical Knowledge Distillation Project Requirements
+# Core ML/AI libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.10.0
+accelerate>=0.20.0
+
+# Quantization and optimization
+bitsandbytes>=0.41.0
+
+# Additional utilities
+numpy>=1.21.0
+scikit-learn>=1.0.0
+tqdm>=4.64.0
+
+# For model loading and pipeline
+sentencepiece>=0.1.99
+protobuf>=3.20.0
+
+# For data handling
+pandas>=1.5.0
+json5>=0.9.0
+
+# For GPU support (optional)
+# nvidia-ml-py3>=7.352.0  # Uncomment if you want GPU monitoring
+
+# Development and testing (optional)
+# pytest>=7.0.0  # Uncomment for testing
+# black>=22.0.0  # Uncomment for code formatting 
