@@ -1,0 +1,3 @@
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/eigen-subbuild/CMakeFiles/eigen-populate.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/eigen-subbuild/CMakeFiles/edit_cache.dir
+/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/_deps/eigen-subbuild/CMakeFiles/rebuild_cache.dir

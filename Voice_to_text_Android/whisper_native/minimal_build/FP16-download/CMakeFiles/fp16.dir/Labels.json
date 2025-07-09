@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/CMakeFiles/fp16"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/CMakeFiles/fp16.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/CMakeFiles/fp16-complete.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-build.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-configure.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-download.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-install.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-mkdir.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-patch.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-test.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fp16"
+		],
+		"name" : "fp16"
+	}
+}

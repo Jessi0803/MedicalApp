@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libmodel_runtime_info_proto.a CMakeFiles/model_runtime_info_proto.dir/__/__/__/tensorflow/lite/profiling/proto/model_runtime_info.pb.cc.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libmodel_runtime_info_proto.a

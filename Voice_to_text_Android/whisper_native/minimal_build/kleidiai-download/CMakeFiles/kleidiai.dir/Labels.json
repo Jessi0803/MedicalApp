@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/CMakeFiles/kleidiai-complete.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-build.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-configure.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-download.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-install.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-mkdir.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-patch.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-test.rule"
+		},
+		{
+			"file" : "/Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/kleidiai-download/kleidiai-prefix/src/kleidiai-stamp/kleidiai-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"kleidiai"
+		],
+		"name" : "kleidiai"
+	}
+}

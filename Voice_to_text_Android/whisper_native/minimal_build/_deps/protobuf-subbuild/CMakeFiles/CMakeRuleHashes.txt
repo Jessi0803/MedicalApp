@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+e16bfe1431288b817523b7880ff96ea1 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-build
+dcd4796f0d4b7af67b637a4a304fcade /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-configure
+0f131fe78f92a7363e190ec1eef9fc41 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-download
+d1eddb4f1479ff0a856a556b54d53f8b /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-install
+080f0adda80638491be93102a4b0d0fc /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-mkdir
+0c40be58a899cc749d73aad03e94e440 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-patch
+608b249b0d36aa7158143664e63594b4 /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-test
+3d5c649be48c35d8d391dc100163aa3c /Users/jc/AndroidStudioProjects/MyApplication/whisper.tflite/whisper_native/minimal_build/src/protobuf-populate-stamp/protobuf-populate-update
+7d51a718996fd7fa882159b52684c016 CMakeFiles/protobuf-populate
+8144d6c698d75f318fbb7d1d9cf42d8f CMakeFiles/protobuf-populate-complete
