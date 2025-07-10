@@ -25,7 +25,8 @@ class SensorEnhancedKnowledgeDistillation99:
         
         print("Loading student model (QwQ-0.5B)...")
         # Student model - needs training
-        self.student_path = "/home/jc/.cache/huggingface/hub/models--kz919--QwQ-0.5B-Distilled/snapshots/9aed656541d9d245a6804f118d98276984164be8"
+        # self.student_path = "/home/jc/.cache/huggingface/hub/models--kz919--QwQ-0.5B-Distilled/snapshots/9aed656541d9d245a6804f118d98276984164be8"
+        self.student_path = "kz919/QwQ-0.5B-Distilled"  # 使用模型名稱而非硬編碼路徑
         self.student_tokenizer = AutoTokenizer.from_pretrained(self.student_path)
         self.student_model = AutoModelForCausalLM.from_pretrained(
             self.student_path,
