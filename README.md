@@ -19,11 +19,12 @@ medical-knowledge-distillation/
 ├── install.sh                         # Automated installation script
 ├── .gitignore                         # Git ignore rules
 ├── demo/                              # Interactive demo scripts
-│   └── demo_sensor_enhanced_99_en.py # 99-sample interactive demo
+│   ├── demo_sensor_enhanced_99_en.py  # 99-sample interactive demo (local model)
+│   └── demo_with_download.py          # Smart demo with auto-download from Hugging Face
 └── src/                               # Source code and training scripts
     └── 03_sensor_enhanced/
-        ├── sensor_enhanced_distillation_99_en.py
-        └── test_sensor_enhanced_99_en.py
+        ├── sensor_enhanced_distillation_99_en.py      # 99-sample training
+        └── test_sensor_enhanced_99_en.py              # Automated testing script
 ```
 
 ## 🚀 Quick Start Guide
@@ -68,46 +69,65 @@ source venv/bin/activate
 
 ### 🎯 Running the Demo
 
-#### Quick Start (Recommended)
+#### Option 1: Smart Demo with Auto-Download
+```bash
+cd demo
+python3 demo_with_download.py
+```
+
+**What happens:**
+1. **Local Model Check**: First checks if you have a locally trained model
+2. **Auto-Download**: If no local model, automatically downloads from Hugging Face (`Jie-Si/medical-student-model-99`)
+3. **Ready to Use**: Starts the medical diagnosis system immediately
+
+#### Option 2: Local Demo (For Users with Trained Models)
 ```bash
 cd demo
 python3 demo_sensor_enhanced_99_en.py
 ```
 
+**Requirements:**
+- You must have a locally trained model in `src/03_sensor_enhanced/sensor_enhanced_student_model_99_en/`
+- Run training first if you don't have a local model
+
 #### What to Expect
-1. **First Run**: The system will download the teacher model (~14GB) - this may take 10-20 minutes
-2. **Interactive Interface**: Enter symptoms and sensor data
-3. **AI Responses**: Get medical advice from both teacher and student models
+1. **First Run**: The system will download models (~14GB teacher + ~1GB student) - this may take 10-20 minutes
+2. **Interactive Interface**: Enter symptoms and get AI-powered medical advice
+3. **AI Responses**: Get medical recommendations from the trained student model
 4. **Auto-save**: All consultations are automatically saved to JSON files
 
 #### Example Usage
 ```
+Enter symptoms (or type 'quit' to exit): chest pain, shortness of breath
+
 Symptoms: chest pain, shortness of breath
-Heart Rate: 95 (or press Enter for auto-generated)
-Temperature: 37.8 (or press Enter for auto-generated)
-Stress Level: 7 (or press Enter for auto-generated)
-Systolic BP: 140 (or press Enter for auto-generated)
-Diastolic BP: 90 (or press Enter for auto-generated)
+Vital Signs:
+  Heart Rate: 95 bpm
+  Temperature: 37.8°C
+  Stress Level: 7/10
+  Blood Pressure: 140/90 mmHg
+
+Student Model Diagnosis:
+------------------------------
+Based on the symptoms and vital signs, this appears to be...
 ```
 
 ### 🧠 Training Your Own Model
 
-#### Run Knowledge Distillation Training
-```bash
 cd src/03_sensor_enhanced
 python3 sensor_enhanced_distillation_99_en.py
 ```
 
 **Training Process:**
-1. Generates 99 medical scenarios
+1. Generates medical scenarios across multiple domains
 2. Creates realistic sensor data for each scenario
 3. Gets teacher responses from MedGemma-27B
-4. Trains student model for 8 epochs
-5. Saves trained model to `sensor_enhanced_student_model_99_en/`
+4. Trains student model using knowledge distillation
+5. Saves trained model for future use
 
 ## 🧠 Model Architecture
 
-### Teacher Model: MedGemma-27B
+### Teacher Model: MedGemma-27B (4-bit quantized)
 - **Purpose**: Large medical language model for generating high-quality medical responses
 - **Input**: Symptoms + Vital signs (heart rate, temperature, stress, blood pressure)
 - **Output**: Comprehensive diagnosis and treatment recommendations
@@ -119,11 +139,17 @@ python3 sensor_enhanced_distillation_99_en.py
 - **Training**: Knowledge distillation from MedGemma-27B
 - **Capability**: Medical reasoning with sensor data interpretation
 - **Size**: ~0.5B parameters (much smaller than teacher)
-- **Memory Usage**: Both models loaded simultaneously during inference
+- **Available**: Pre-trained model on Hugging Face (`Jie-Si/medical-student-model-99`)
 
-## 📊 Training Data
+### Pre-trained Model Access
+- **Hugging Face**: `Jie-Si/medical-student-model-99`
+- **Training Data**: 99 comprehensive medical scenarios
+- **Auto-Download**: Automatically downloaded by `demo_with_download.py`
+- **No Training Required**: Ready to use out-of-the-box
 
-### 99-Sample Version (Comprehensive)
+## 📊 Training Data Options
+
+### 99-Sample Version (Standard)
 - **Cardiovascular**: 15 scenarios
 - **Respiratory**: 12 scenarios
 - **Digestive**: 12 scenarios
@@ -135,6 +161,8 @@ python3 sensor_enhanced_distillation_99_en.py
 - **Genitourinary**: 5 scenarios
 - **Reproductive**: 5 scenarios
 - **Immune**: 4 scenarios
+- **Training Time**: ~2-3 hours
+
 
 ## 🔧 Sensor Data Generation
 
@@ -224,22 +252,6 @@ Treatment Plan:
 - Compare with teacher model responses
 - Save consultation logs for analysis
 
-## 🎯 Interactive Demo Features
-
-### Input Options
-- **Manual symptom entry**: Free text description
-- **Manual sensor data**: Enter specific vital signs
-- **Auto-generated sensors**: System generates based on symptoms
-
-### Output Comparison
-- **Student model response**: QwQ-0.5B recommendations
-- **Teacher model response**: MedGemma-27B recommendations
-- **Side-by-side comparison**: Easy to compare quality
-
-### Data Logging
-- **Automatic saving**: All consultations saved to JSON
-- **Timestamp tracking**: When each consultation occurred
-- **Complete context**: Symptoms, sensors, and both model responses
 
 ## 📋 Usage Examples
 
@@ -314,62 +326,13 @@ python3 test_sensor_enhanced_99_en.py
 - **Model Sizes**: Teacher ~14GB (4-bit), Student ~1GB
 - **Memory Usage**: Both models loaded simultaneously during training and inference
 
-## 🛠️ Troubleshooting
 
-### Common Issues
-
-**1. CUDA Out of Memory**
-```
-RuntimeError: CUDA out of memory
-```
-**Solution**: Ensure you have 24GB+ VRAM or reduce model precision
-
-**2. Model Download Fails**
-```
-Error downloading model from Hugging Face
-```
-**Solution**: Check internet connection and try again
-
-**3. Import Errors**
-```
-ModuleNotFoundError: No module named 'transformers'
-```
-**Solution**: Activate virtual environment and reinstall requirements
-
-**4. Permission Denied**
-```
-Permission denied: install.sh
-```
-**Solution**: Run `chmod +x install.sh` before executing
-
-### Getting Help
-
-1. Ensure all hardware requirements are met
-2. Verify Python 3.8+ is installed
-3. Make sure you have sufficient disk space and GPU memory
-4. Check the installation logs for specific error messages
-
-## 🔄 Customization
-
-### Adding New Medical Domains
-1. Add symptom combinations to training data
-2. Update sensor data generation logic
-3. Retrain model with expanded dataset
-
-### Supporting New Languages
-1. Translate prompts and responses
-2. Update tokenizer for target language
-3. Retrain with translated data
-
-### Custom Sensor Types
-1. Modify sensor data generation function
-2. Update input/output formats
-3. Retrain with new sensor combinations
 
 ## 📝 File Descriptions
 
 ### Demo Files
 - `demo/demo_sensor_enhanced_99_en.py`: 99-sample interactive demo
+- `demo/demo_with_download.py`: Smart demo with auto-download
 
 ### Training Files
 - `src/03_sensor_enhanced/sensor_enhanced_distillation_99_en.py`: 99-sample training
@@ -384,13 +347,4 @@ Permission denied: install.sh
 - `src/03_sensor_enhanced/sensor_enhanced_student_model_99_en/`: Trained 99-sample model
 - `interactive_consultations_99_en.json`: Demo consultation logs
 
-## 🎉 Success!
-
-Once you see the interactive demo running, you can:
-- Enter symptoms and get AI-generated medical advice
-- Compare responses from teacher vs student models
-- Train your own knowledge distillation model
-- Customize the system for your specific needs
-
-Happy coding! 🏥✨
 
