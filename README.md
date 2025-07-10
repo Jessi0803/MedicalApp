@@ -44,8 +44,8 @@ medical-knowledge-distillation/
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/medical-knowledge-distillation.git
-cd medical-knowledge-distillation
+git clone https://github.com/Jessi0803/MedicalApp.git
+cd MedicalApp
 ```
 
 #### 2. Run the Installation Script (Recommended)
