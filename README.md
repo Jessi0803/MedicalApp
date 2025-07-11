@@ -2,7 +2,7 @@
 
 A comprehensive medical knowledge distillation system that enhances small language models (QwQ-0.5B) with sensor data interpretation capabilities by learning from large medical models (MedGemma-27B).
 
-## 🏥 Project Overview
+##  Project Overview
 
 This project implements sensor-enhanced knowledge distillation for medical diagnosis and treatment recommendations. The system combines:
 - **Symptoms** from patients
@@ -10,7 +10,51 @@ This project implements sensor-enhanced knowledge distillation for medical diagn
 - **Medical reasoning** from large language models
 - **Distilled knowledge** into smaller, efficient models
 
-## 📁 Project Structure
+##  Quick Start Guide (For Most Users)
+
+
+```bash
+# Clone the repository
+git clone https://github.com/Jessi0803/MedicalApp.git
+cd MedicalApp
+
+# Method 1: Automated installation (recommended)
+chmod +x install.sh
+./install.sh
+source venv/bin/activate
+
+# Method 2: Manual installation
+# pip install torch transformers huggingface_hub
+
+# Run the demo (memory efficient)
+cd demo
+python3 demo_with_download_memory_efficient.py
+```
+
+##  System Requirements
+
+### For Demo Only 
+- **NVIDIA GPU**: 4-6GB VRAM (RTX 1060+)
+- **RAM**: 8GB
+- **Internet**: Required for model download
+
+### For Full Training
+- **NVIDIA GPU**: 24GB VRAM (RTX 3090/4090)
+- **RAM**: 32GB+ system memory
+- **Storage**: 50GB+ free space for model downloads
+
+## 🚀 Demo Versions
+
+### 1. Memory Efficient Version (Recommended)
+```bash
+python3 demo_with_download_memory_efficient.py
+```
+- **User Experience**: Simple text input (original style)
+- **Memory**: 4-6GB VRAM / 8GB+ Mac M3
+- **Input**: Direct symptom entry
+- **Example**: `Enter symptoms: chest pain, fever`
+
+##  Project Structure
 
 ```
 medical-knowledge-distillation/
@@ -19,27 +63,15 @@ medical-knowledge-distillation/
 ├── install.sh                         # Automated installation script
 ├── .gitignore                         # Git ignore rules
 ├── demo/                              # Interactive demo scripts
-│   ├── demo_sensor_enhanced_99_en.py  # 99-sample interactive demo (local model)
-│   └── demo_with_download.py          # Smart demo with auto-download from Hugging Face
+│   ├── demo_with_download_memory_efficient.py  # 🎯 Recommended (original UX)
+│   ├── demo_with_download.py                   # Menu-based version
+│   └── demo_sensor_enhanced_99_en.py           # Local model demo
 └── src/                               # Source code and training scripts
     └── 03_sensor_enhanced/
         ├── sensor_enhanced_distillation_99_en.py      # 99-sample training
         └── test_sensor_enhanced_99_en.py              # Automated testing script
 ```
 
-## 🚀 Quick Start Guide
-
-### 📋 Prerequisites
-
-#### Hardware Requirements
-- **GPU**: NVIDIA GPU with 24GB+ VRAM (recommended)
-- **RAM**: 32GB+ system memory
-- **Storage**: 50GB+ free space for model downloads
-
-#### Software Requirements
-- Python 3.8 or higher
-- CUDA 11.8+ (for GPU support)
-- Git
 
 ### 🔧 Installation Steps
 
@@ -67,7 +99,7 @@ pip install -r requirements.txt
 source venv/bin/activate
 ```
 
-### 🎯 Running the Demo
+### 🎯 Running Advanced Demos
 
 #### Option 1: Smart Demo with Auto-Download
 ```bash
@@ -112,8 +144,9 @@ Student Model Diagnosis:
 Based on the symptoms and vital signs, this appears to be...
 ```
 
-### 🧠 Training Your Own Model
+###  Training Your Own Model
 
+```bash
 cd src/03_sensor_enhanced
 python3 sensor_enhanced_distillation_99_en.py
 ```
@@ -125,7 +158,8 @@ python3 sensor_enhanced_distillation_99_en.py
 4. Trains student model using knowledge distillation
 5. Saves trained model for future use
 
-## 🧠 Model Architecture
+
+##  Model Architecture
 
 ### Teacher Model: MedGemma-27B (4-bit quantized)
 - **Purpose**: Large medical language model for generating high-quality medical responses
@@ -147,7 +181,7 @@ python3 sensor_enhanced_distillation_99_en.py
 - **Auto-Download**: Automatically downloaded by `demo_with_download.py`
 - **No Training Required**: Ready to use out-of-the-box
 
-## 📊 Training Data Options
+## Training Data Options
 
 ### 99-Sample Version (Standard)
 - **Cardiovascular**: 15 scenarios
@@ -163,8 +197,7 @@ python3 sensor_enhanced_distillation_99_en.py
 - **Immune**: 4 scenarios
 - **Training Time**: ~2-3 hours
 
-
-## 🔧 Sensor Data Generation
+##  Sensor Data Generation
 
 The system automatically generates realistic vital signs based on symptoms:
 
@@ -180,7 +213,7 @@ sensor_data = {
 }
 ```
 
-## 📝 Model Input Data Format
+##  Model Input Data Format
 
 ### Teacher Model Input Format
 ```
@@ -230,7 +263,7 @@ Treatment Plan:
 }
 ```
 
-## 📈 Training Process
+##  Training Process
 
 ### 1. Data Preparation
 - Generate symptom combinations across medical domains
@@ -252,8 +285,7 @@ Treatment Plan:
 - Compare with teacher model responses
 - Save consultation logs for analysis
 
-
-## 📋 Usage Examples
+##  Usage Examples
 
 ### Running Interactive Demo
 ```bash
@@ -288,7 +320,7 @@ python3 sensor_enhanced_distillation_99_en.py
 # 5. Save model to sensor_enhanced_student_model_99_en/
 ```
 
-## 🔍 Testing and Evaluation
+## Testing and Evaluation
 
 ### Automated Testing
 ```bash
@@ -301,7 +333,7 @@ python3 test_sensor_enhanced_99_en.py
 - Compare student vs teacher responses
 - Test edge cases and unusual symptoms
 
-## 🛠️ Technical Requirements
+##  Technical Requirements
 
 ### Software Dependencies
 - Python 3.8+
@@ -326,13 +358,12 @@ python3 test_sensor_enhanced_99_en.py
 - **Model Sizes**: Teacher ~14GB (4-bit), Student ~1GB
 - **Memory Usage**: Both models loaded simultaneously during training and inference
 
-
-
-## 📝 File Descriptions
+##  File Descriptions
 
 ### Demo Files
-- `demo/demo_sensor_enhanced_99_en.py`: 99-sample interactive demo
+- `demo/demo_with_download_memory_efficient.py`: Memory efficient demo (recommended)
 - `demo/demo_with_download.py`: Smart demo with auto-download
+- `demo/demo_sensor_enhanced_99_en.py`: 99-sample interactive demo (local model)
 
 ### Training Files
 - `src/03_sensor_enhanced/sensor_enhanced_distillation_99_en.py`: 99-sample training
@@ -346,5 +377,15 @@ python3 test_sensor_enhanced_99_en.py
 ### Output Files
 - `src/03_sensor_enhanced/sensor_enhanced_student_model_99_en/`: Trained 99-sample model
 - `interactive_consultations_99_en.json`: Demo consultation logs
+
+
+
+
+##  Quick Start Commands
+
+```bash
+# For most users (NVIDIA GPU)
+python3 demo_with_download_memory_efficient.py
+
 
 
