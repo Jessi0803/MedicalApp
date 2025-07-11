@@ -156,7 +156,7 @@ Treatment Plan:"""
     def run_demo(self):
         """Run interactive demo - original simple input style"""
         print("\nStarting medical diagnosis...")
-        print("💡 Memory Efficient Version - Only 4-6GB VRAM required")
+        print(" Memory Efficient Version - Only 4-6GB VRAM required")
         
         while True:
             print("\n" + "="*60)

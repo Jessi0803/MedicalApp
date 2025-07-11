@@ -23,8 +23,6 @@ chmod +x install.sh
 ./install.sh
 source venv/bin/activate
 
-# Method 2: Manual installation
-# pip install torch transformers huggingface_hub
 
 # Run the demo (memory efficient)
 cd demo
@@ -73,7 +71,7 @@ medical-knowledge-distillation/
 ```
 
 
-### 🔧 Installation Steps
+###  Installation Steps
 
 #### 1. Clone the Repository
 ```bash
